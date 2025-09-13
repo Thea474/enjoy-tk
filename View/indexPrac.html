@@ -5,69 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<style>
-    body {
-      height: 1500px; /* Set body height to demonstrate scrolling */
-      font-family: Arial, sans-serif;
-    }
-    .scroll-btn {
-      position: fixed;
-      bottom: 200px;
-      max-width: 90px;
-      right: 5px;
-      padding: 5px 5px;
-      background-color: #f2ff00;
-      border-color: rgb(255, 166, 0);
-      color: rgb(238, 0, 0);
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 25px;
-    }
-  </style>
-</head>
-<body>
- <button class="scroll-btn" onclick="scrollDown()">Down</button>
-
-  <script>
-    function scrollDown() {
-      window.scrollBy({
-        top: 1000, // Amount to scroll down
-        left: 500,
-        behavior: 'smooth' // Smooth scrolling effect
-      });
-    }
-  </script>
-
-</body>
-
-<style>
-    body {
-        background-image: url('../Tagscode/Image/TaYYkeo.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-size: 100% 100%;
-}
-</style>
-
-<Marquee bgcolor="yellow" behavior="scroll" scrollmount="1000s"
-direction="left" loop="">This is my website[about Takeo.] | Ownership: No.6/Eab Rithea</Marquee>
-<hr color="Gold" size="5px" width="30%" align="center">
-<hr color="Gold" size="8px" width="25%" align="center">
-<hr color="Gold" size="5px" width="20%" align="center">
-    <center><img src="../Tagscode/Image/TakeoProvince.jpg" width="300px" height="200px"></center>
     <style>
+        body {
+            height: 1500px; /* Set body height to demonstrate scrolling */
+            font-family: Arial, sans-serif;
+            background-image: url('../Tagscode/Image/TaYYkeo.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .scroll-btn {
+            position: fixed;
+            bottom: 200px;
+            max-width: 90px;
+            right: 5px;
+            padding: 5px 5px;
+            background-color: #f2ff00;
+            border-color: rgb(255, 166, 0);
+            color: rgb(238, 0, 0);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 25px;
+        }
         .main {
             text-align: center;
         }
-
         .marq {
             padding-top: 5px;
             padding-bottom: 5px;
         }
-
         .geek1 {
             font-size: 25px;
             font-weight: bold;
@@ -80,12 +47,78 @@ direction="left" loop="">This is my website[about Takeo.] | Ownership: No.6/Eab 
             color: rgb(0, 0, 0);
             padding-bottom: 10px;
         }
+        button {
+            width: 250px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: rgb(246, 255, 0);
+            color: brown;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+        button:hover {
+            background-color: rgb(116, 174, 245);
+            transition: 0.5s;
+        }
+        .imag {
+            border: solid 2px red;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        #TBtn {
+            position: fixed;
+            bottom: 200px;
+            float: center;
+            right: 5px;
+            left: 5px;
+            max-width: 60px;
+            width: 100%;
+            font-size: 25px;
+            border-color: rgb(255, 166, 0);
+            background-color: rgb(255, 251, 0);
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #TBtn:hover {
+            background-color: #7ec2f3;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-grid a img {
+            width: 250px;
+            height: 200px;
+            border: 3px solid;
+            border-radius: 10px;
+        }
     </style>
-  
-<hr color="Gold" size="5px" width="20%" align="center">
-<hr color="Gold" size="8px" width="25%" align="center">
-<hr color="Gold" size="5px" width="30%" align="center">
-<body>
+</head>
+<body id="Top">
+    <button class="scroll-btn" onclick="scrollDown()">Down</button>
+
+    <script>
+        function scrollDown() {
+            window.scrollBy({
+                top: 1000, // Amount to scroll down
+                left: 0, // Removed left scroll
+                behavior: 'smooth' // Smooth scrolling effect
+            });
+        }
+    </script>
+
+    <Marquee bgcolor="yellow" behavior="scroll" scrollmount="1000s"
+    direction="left" loop="">This is my website[about Takeo.] | Ownership: No.6/Eab Rithea</Marquee>
+    <hr color="Gold" size="5px" width="30%" align="center">
+    <hr color="Gold" size="8px" width="25%" align="center">
+    <hr color="Gold" size="5px" width="20%" align="center">
+    <center><img src="../Tagscode/Image/TakeoProvince.jpg" width="300px" height="200px"></center>
+
+    <hr color="Gold" size="5px" width="20%" align="center">
+    <hr color="Gold" size="8px" width="25%" align="center">
+    <hr color="Gold" size="5px" width="30%" align="center">
     <div class="main">
         <marquee class="marq" bgcolor="DeepSkyBlue" behavior="alternate" scrollmount="100s"
                  direction="right" loop="">
@@ -97,142 +130,73 @@ direction="left" loop="">This is my website[about Takeo.] | Ownership: No.6/Eab 
             </div>
         </marquee>
     </div>
-</body>
     <center><a href="index01.html" target="_blank"><button><font face="Khmer OS Muol Light">ទីតាំងផែ​នទី</font></button></a></center>    
      <a href="index01.html" <font face="Kh Battambang" color="Red" size=""></font></a></center>
        
-    <a href="index01.html" target="_blank">
-        <center><img href="index01.html" target="_blank" src="../Tagscode/Image/Map1.jpg" alt="HTML5 Icon"  title="ផែនទី"  width="400" height="600" hspace="6px" vspace="6px" border="3"></center>
+    <center><a href="index01.html" target="_blank"><img src="../Tagscode/Image/Map1.jpg" alt="Map" title="ផែនទី" width="400" height="600"></a></center>
     <hr color="blue" size="5px" width="100%" align="center">
-             <h2 style="color: rgb(8, 0, 255); text-align: center">
-                <font face="Khmer OS System"><bold>រមណីយដ្ឋាន​ និងទីកន្លែងល្បីៗក្នុងខេត្តតាកែវរួមមាន:</bold></font></h2>
-<body>
+    <h2 style="color: rgb(8, 0, 255); text-align: center">
+        <font face="Khmer OS System"><bold>រមណីយដ្ឋាន​ និងទីកន្លែងល្បីៗក្នុងខេត្តតាកែវរួមមាន:</bold></font>
+    </h2>
 
+    <button id="TBtn"><a href="#Top" style="color: rgb(255, 0, 0)">Top</a></button>
 
-    <style>
-        button{
-            width: 250px;
-            height: 50px;
-            border-radius: 5px;
-            background-color: rgb(246, 255, 0);
-            color: brown;
-            margin-top: 5px;
-            font-size: 15px;
-        }
-        button:hover{
-            background-color: rgb(116, 174, 245);
-            transition: 0.5s;
-        }
-        .imag{
-            border: solid 2px red;
-            margin-top: 30px;
-            border-radius: 10px;
-        }
-        #TBtn {
-        position: fixed;
-        bottom: 200px;
-        float: center;
-        right: 5px;
-        left: 5px;
-        max-width: 60px;
-        width: 100%;
-        font-size: 25px;
-        border-color: rgb(255, 166, 0);
-        background-color: rgb(255, 251, 0);
-        padding: 5px;
-        border-radius: 10px;
-
-    }
-/*On Hover Color Change*/
-    #TBtn:hover {
-        background-color: #7ec2f3;
-    } 
-    
-        
-    </style>
-<button id="TBtn"><a href="#Top" style="color: rgb(255, 0, 0)">Top</a></button>  
- 
-        <body>
-            <center class="web">
-                <a href="indexPrac.html" target="_blank"><button><font face="Kh Battambang">Home</font></button></a>  
-                <a href="index02.html" target="_blank"><button><font face="Kh Battambang" color="Red">1.ភ្នំជីសូរ</font></button></a> 
-                <a href="index03.html" target="_blank"><button><font face="Kh Battambang" color="Red">2.ភ្នំដានិងភ្នំអង្គរបុរី</font></button></a>    
-                <a href="index04.html" target="_blank"><button><font face="Kh Battambang" color="Red">3.ភ្នំតាម៉ៅ</font></button></a>   
-                <a href="index05.html" target="_blank"><button><font face="Kh Battambang" color="Red">4.ភ្នំប៉ាយ៉ង់កោ</font></button></a>     
-                <a href="indexo6.html" target="_blank"><button><font face="Kh Battambang" color="Red">5.ភ្នំខ្លែង</font></button></a>    
-                <a href="indexo7.html" target="_blank"><button><font face="Kh Battambang" color="Red">6.ភ្នំជីតាពេជ្រ</font></button></a>     
-                <a href="index08.html" target="_blank"><button><font face="Kh Battambang" color="Red">7.ភ្នំសន្លុង</font></button></a>       
-                <a href="index09.html" target="_blank"><button><font face="Kh Battambang" color="Red">8.ភ្នំពុទ្ធគិរី</font></button></a>      
-                <a href="index10.html" target="_blank"><button><font face="Kh Battambang" color="Red">9.ប្រាសាទជប់ពល</font></button></a>     
-                <a href="index11.html" target="_blank"><button><font face="Kh Battambang" color="Red">10.ប្រាសាទតាព្រហ្មទន្លេបាទី</font></button></a>   
-                <a href="index12.html" target="_blank"><button><font face="Kh Battambang" color="Red">11.ប្រាសាទនាងខ្មៅ</font></button></a>      
-                <a href="index13.html" target="_blank"><button><font face="Kh Battambang" color="Red">12.រមណីយដ្ឋានទន្លេបាទី</font></button></a>     
-                <a href="index14.html" target="_blank"><button><font face="Kh Battambang" color="Red">13.រមណីយដ្ឋានកំពូលពេជ្រឬអន្លង់ភ្ញៀវ</font></button></a>    
-                <a href="index15.html" target="_blank"><button><font face="Kh Battambang" color="Red">14.រមណីយដ្ឋានត្រីមាស</font></button></a>     
-                <a href="index16.html" target="_blank"><button><font face="Kh Battambang" color="Red">15.រមណីយដ្ឋានទឹកជ្រោះផ្អោក</font></a>     
-                <a href="index17.html" target="_blank"><button><font face="Kh Battambang" color="Red">16.ទំនប់ម្លិច</font></button></a>     
-                <a href="index18.html" target="_blank"><button><font face="Kh Battambang" color="Red">17.ទំនប់ត្នោតទេរ</font></button></a>   
-                <a href="index19.html" target="_blank"><button><font face="Kh Battambang" color="Red">18.ទំនប់ខ្ពបត្របែក</font></button></a>   
-                <a href="index20.html" target="_blank"><button><font face="Kh Battambang" color="Red">19.សារមន្ទីរខេត្តតាកែវ</font></button></a>    
-                <a href="index21.html" target="_blank"><button><font face="Kh Battambang" color="Red">20.សារមន្ទីរស្រុកអង្គរបុរី</font></button></a>       
-                <a href="index22.html" target="_blank"><button><font face="Kh Battambang" color="Red">21.តំបន់ការពារទេសភាពបឹងព្រែកល្ពៅ</font></button></a> 
-                <a href="index23.html" target="_blank"><button><font face="Kh Battambang" color="Red">22.ក្រុងដូនកែវ</font></button></a>      
-                <a href="index24.html" target="_blank"><button><font face="Kh Battambang" color="Red">23.ភ្នំចំបាប់</font></button></a>     
-                <a href="index25.html" target="_blank"><button><font face="Kh Battambang" color="Red">24.ស្ពានកំពង់ចក</font></button></a>  <br>   
-
-   
-                      
-        </body>
-
-
-        <a href="index02.html" target="_blank">
-            <img href="index02.html" target="_blank" src="../Tagscode/Image/ភ្នំជីសូរ.jpg"  title="1.ភ្នំជីសូរ" align="left" width="250" height="200" hspace="5px" border="3" ></a>
-        <a href="index03.html" target="_blank">
-             <img href="index03.html" target="_blank" src="../Tagscode/Image/Phnom DA.jpg"  title="2.ភ្នំដាភ្នំបុរី" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index04.html" target="_blank">
-            <img href="index04.html" target="_blank" src="../Tagscode/Image/Zoo.jpg"  title="3.ភ្នំតាម៉ៅ​និងសួនសត្វភ្នំតាម៉ៅ" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index05.html" target="_blank">
-            <img href="index05.html" target="_blank" src="../Tagscode/Image/ភ្នំបាយ៉ង់កោ.jpg"  title="4.ភ្នំប៉ាយ៉ងកោ" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index06.html" target="_blank">
-            <img href="indexo6.html" target="_blank" src="../Tagscode/Image/ភ្នំខ្លែង.jpg"  title="5.ភ្នំខ្លែង" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index07.html" target="_blank">
-            <img href="indexo7.html" target="_blank" src="../Tagscode/Image/ភ្នំជីតាពេជ្រ.jpg"  title="6.ភ្នំជីតាពេជ្រ" align="left" width="250" height="200" hspace="5px" border="3"></a>
-         <a href="index08.html" target="_blank">
-           <img href="index08.html" target="_blank" src="../Tagscode/Image/ភ្នំសន្លុង.jpg"  title="7.ភ្នំសន្លុង" align="left" width="250" height="200" hspace="5px" border="3"></a>
-           <a href="index09.html" target="_blank">
-            <img href="index09.html" target="_blank" src="../Tagscode/Image/ភ្នំពុទ្ធគិរី.jpg"  title="8.ភ្នំពុទ្ធគិរី" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index10.html" target="_blank">
-             <img href="index10.html" target="_blank" src="../Tagscode/Image/ជប់ពល.jpg"  title="9.ប្រាសាទជប់ពល" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index11.html" target="_blank">
-            <img href="index11.html" target="_blank" src="../Tagscode/Image/តាព្រហ្ម.jpg"  title="10.ប្រាសាទតាព្រហ្មទន្លេបាទី" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index12.html" target="_blank">
-            <img href="index12.html" target="_blank" src="../Tagscode/Image/នាងខ្មៅ.jpg"  title="11.ប្រាសាទនាងខ្មៅ." align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index13.html" target="_blank">
-            <img href="index13.html" target="_blank" src="../Tagscode/Image/ទន្លេបាទី.jpg"  title="12.រមណីយដ្ឋានទន្លេបាទី" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index14.html" target="_blank">
-            <img href="index14.html" target="_blank" src="../Tagscode/Image/អន្លង់ភ្ញៀវ.jpg"  title="13.រមណីយដ្ឋានកំពូលឬអន្លង់ភ្ញៀវ" align="left" width="250" height="200" hspace="5px" border="3"></a>
-         <a href="index15.html" target="_blank">
-           <img href="index15.html" target="_blank" src="../Tagscode/Image/ត្រីមាស.jpg"  title="14.រមណីយដ្ឋានត្រីមាស" align="left" width="250" height="200" hspace="5px" border="3"></a>
-           <a href="index16.html" target="_blank">
-            <img href="index16.html" target="_blank" src="../Tagscode/Image/ផ្អោក.jpg"  title="15.រមណីយដ្ឋានទឹកជ្រោះផ្អោក" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index17.html" target="_blank">
-             <img href="index17.html" target="_blank" src="../Tagscode/Image/ម្លេច.jpg"  title="16.ទំនប់ម្លិច" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index18.html" target="_blank">
-            <img href="index18.html" target="_blank" src="../Tagscode/Image/ត្នោតទេរ.jpg"  title="17.ទំនប់ត្នោតទេរ" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index19.html" target="_blank">
-            <img href="index19.html" target="_blank" src="../Tagscode/Image/ខ្ពបត្របែក.jpg"  title="18.ទំនប់ខ្ពបត្របែក" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index20.html" target="_blank">
-            <img href="index20.html" target="_blank" src="../Tagscode/Image/សារមន្ទីរតាកែវ.jpg"  title="19.សារមន្ទីរខេត្តតាកែវ" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index21.html" target="_blank">
-            <img href="index21.html" target="_blank" src="../Tagscode/Image/សារមន្ទីរអង្គរបុរី.jpg"  title="20.សារមន្ទីរស្រុកអង្គរបុរី" align="left" width="250" height="200" hspace="5px" border="3"></a>
-         <a href="index22.html" target="_blank">
-           <img href="index22.html" target="_blank" src="../Tagscode/Image/ព្រែកល្ពៅ.jpg"  title="21.តំបន់ការពារទេសភាពបឹងព្រែកល្ពៅ" align="left" width="250" height="200" hspace="5px" border="3"></a>
-           <a href="index23.html" target="_blank">
-             <img href="index23.html" target="_blank" src="../Tagscode/Image/TakeoP.jpeg"  title="23.ក្រុងដូនកែវ" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index24.html" target="_blank">
-            <img href="index24.html" target="_blank" src="../Tagscode/Image/ចំបាច់.jpg"  title="24.ភ្នំចំបាប់" align="left" width="250" height="200" hspace="5px" border="3"></a>
-        <a href="index25.html" target="_blank">
-            <img href="index25.html" target="_blank" src="../Tagscode/Image/ស្ពានកំពង់ចក.jpg"  title="25.ស្ពានកំពង់ចក" align="left" width="250" height="200" hspace="5px" border="3"></a>
+    <center class="web">
+        <a href="indexPrac.html" target="_blank"><button><font face="Kh Battambang">Home</font></button></a>
+        <a href="index02.html" target="_blank"><button><font face="Kh Battambang" color="Red">1.ភ្នំជីសូរ</font></button></a>
+        <a href="index03.html" target="_blank"><button><font face="Kh Battambang" color="Red">2.ភ្នំដានិងភ្នំអង្គរបុរី</font></button></a>
+        <a href="index04.html" target="_blank"><button><font face="Kh Battambang" color="Red">3.ភ្នំតាម៉ៅ</font></button></a>
+        <a href="index05.html" target="_blank"><button><font face="Kh Battambang" color="Red">4.ភ្នំប៉ាយ៉ង់កោ</font></button></a>
+        <a href="indexo6.html" target="_blank"><button><font face="Kh Battambang" color="Red">5.ភ្នំខ្លែង</font></button></a>
+        <a href="indexo7.html" target="_blank"><button><font face="Kh Battambang" color="Red">6.ភ្នំជីតាពេជ្រ</font></button></a>
+        <a href="index08.html" target="_blank"><button><font face="Kh Battambang" color="Red">7.ភ្នំសន្លុង</font></button></a>
+        <a href="index09.html" target="_blank"><button><font face="Kh Battambang" color="Red">8.ភ្នំពុទ្ធគិរី</font></button></a>
+        <a href="index10.html" target="_blank"><button><font face="Kh Battambang" color="Red">9.ប្រាសាទជប់ពល</font></button></a>
+        <a href="index11.html" target="_blank"><button><font face="Kh Battambang" color="Red">10.ប្រាសាទតាព្រហ្មទន្លេបាទី</font></button></a>
+        <a href="index12.html" target="_blank"><button><font face="Kh Battambang" color="Red">11.ប្រាសាទនាងខ្មៅ</font></button></a>
+        <a href="index13.html" target="_blank"><button><font face="Kh Battambang" color="Red">12.រមណីយដ្ឋានទន្លេបាទី</font></button></a>
+        <a href="index14.html" target="_blank"><button><font face="Kh Battambang" color="Red">13.រមណីយដ្ឋានកំពូលពេជ្រឬអន្លង់ភ្ញៀវ</font></button></a>
+        <a href="index15.html" target="_blank"><button><font face="Kh Battambang" color="Red">14.រមណីយដ្ឋានត្រីមាស</font></button></a>
+        <a href="index16.html" target="_blank"><button><font face="Kh Battambang" color="Red">15.រមណីយដ្ឋានទឹកជ្រោះផ្អោក</font></a>
+        <a href="index17.html" target="_blank"><button><font face="Kh Battambang" color="Red">16.ទំនប់ម្លិច</font></button></a>
+        <a href="index18.html" target="_blank"><button><font face="Kh Battambang" color="Red">17.ទំនប់ត្នោតទេរ</font></button></a>
+        <a href="index19.html" target="_blank"><button><font face="Kh Battambang" color="Red">18.ទំនប់ខ្ពបត្របែក</font></button></a>
+        <a href="index20.html" target="_blank"><button><font face="Kh Battambang" color="Red">19.សារមន្ទីរខេត្តតាកែវ</font></button></a>
+        <a href="index21.html" target="_blank"><button><font face="Kh Battambang" color="Red">20.សារមន្ទីរស្រុកអង្គរបុរី</font></button></a>
+        <a href="index22.html" target="_blank"><button><font face="Kh Battambang" color="Red">21.តំបន់ការពារទេសភាពបឹងព្រែកល្ពៅ</font></button></a>
+        <a href="index23.html" target="_blank"><button><font face="Kh Battambang" color="Red">22.ក្រុងដូនកែវ</font></button></a>
+        <a href="index24.html" target="_blank"><button><font face="Kh Battambang" color="Red">23.ភ្នំចំបាប់</font></button></a>
+        <a href="index25.html" target="_blank"><button><font face="Kh Battambang" color="Red">24.ស្ពានកំពង់ចក</font></button></a>
+        <a href="index26.html" target="_blank"><button><font face="Kh Battambang" color="Red">25.បុកល្ហុងចុងត្នោត</font></button></a> 
+    </center>
+<br>
+    <div class="image-grid">
+        <a href="index02.html" target="_blank"><img src="../Tagscode/Image/Jiso.jpg" title="1.ភ្នំជីសូរ"></a>
+        <a href="index03.html" target="_blank"><img src="../Tagscode/Image/Phnom DA.jpg" title="2.ភ្នំដាភ្នំបុរី"></a>
+        <a href="index04.html" target="_blank"><img src="../Tagscode/Image/Zoo.jpg" title="3.ភ្នំតាម៉ៅ​និងសួនសត្វភ្នំតាម៉ៅ"></a>
+        <a href="index05.html" target="_blank"><img src="../Tagscode/Image/BayongTemple.jpg" title="4.ភ្នំប៉ាយ៉ងកោ"></a>
+        <a href="indexo6.html" target="_blank"><img src="../Tagscode/Image/kleng1.jpg" title="5.ភ្នំខ្លែង"></a>
+        <a href="indexo7.html" target="_blank"><img src="../Tagscode/Image/JiTaPich.jpg" title="6.ភ្នំជីតាពេជ្រ"></a>
+        <a href="index08.html" target="_blank"><img src="../Tagscode/Image/ភ្នំសន្លុង.jpg" title="7.ភ្នំសន្លុង"></a>
+        <a href="index09.html" target="_blank"><img src="../Tagscode/Image/ពុទ្ធគិរិ១.jpg" title="8.ភ្នំពុទ្ធគិរី"></a>
+        <a href="index10.html" target="_blank"><img src="../Tagscode/Image/ជប់ពល.jpg" title="9.ប្រាសាទជប់ពល"></a>
+        <a href="index11.html" target="_blank"><img src="../Tagscode/Image/តាព្រហ្ម.jpg" title="10.ប្រាសាទតាព្រហ្មទន្លេបាទី"></a>
+        <a href="index12.html" target="_blank"><img src="../Tagscode/Image/នាងខ្មៅ.jpg" title="11.ប្រាសាទនាងខ្មៅ"></a>
+        <a href="index13.html" target="_blank"><img src="../Tagscode/Image/Bati1.jpg" title="12.រមណីយដ្ឋានទន្លេបាទី"></a>
+        <a href="index14.html" target="_blank"><img src="../Tagscode/Image/អន្លង.jpg" title="13.រមណីយដ្ឋានកំពូលឬអន្លង់ភ្ញៀវ"></a>
+        <a href="index15.html" target="_blank"><img src="../Tagscode/Image/ត្រីមាស.jpg" title="14.រមណីយដ្ឋានត្រីមាស"></a>
+        <a href="index16.html" target="_blank"><img src="../Tagscode/Image/ផ្អោក.jpg" title="15.រមណីយដ្ឋានទឹកជ្រោះផ្អោក"></a>
+        <a href="index17.html" target="_blank"><img src="../Tagscode/Image/mlech.jpg" title="16.ទំនប់ម្លិច"></a>
+        <a href="index18.html" target="_blank"><img src="../Tagscode/Image/ត្នោតទេរ.jpg" title="17.ទំនប់ត្នោតទេរ"></a>
+        <a href="index19.html" target="_blank"><img src="../Tagscode/Image/ខ្ពបត្របែក.jpg" title="18.ទំនប់ខ្ពបត្របែក"></a>
+        <a href="index20.html" target="_blank"><img src="../Tagscode/Image/សារមន្ទីរតាកែវ.jpg" title="19.សារមន្ទីរខេត្តតាកែវ"></a>
+        <a href="index21.html" target="_blank"><img src="../Tagscode/Image/សារមន្ទីរអង្គរបុរី.jpg" title="20.សារមន្ទីរស្រុកអង្គរបុរី"></a>
+        <a href="index22.html" target="_blank"><img src="../Tagscode/Image/បឹងល្ពៅ៥.jpg" title="21.តំបន់ការពារទេសភាពបឹងព្រែកល្ពៅ"></a>
+        <a href="index23.html" target="_blank"><img src="../Tagscode/Image/TakeoP.jpeg" title="22.ក្រុងដូនកែវ"></a>
+        <a href="index24.html" target="_blank"><img src="../Tagscode/Image/ចំបាច់.jpg" title="23.ភ្នំចំបាប់"></a>
+        <a href="index25.html" target="_blank"><img src="../Tagscode/Image/កំពងចក៣.jpg" title="24.ស្ពានកំពង់ចក"></a>
+        <a href="index26.html" target="_blank"><img src="../Tagscode/Image/bl3.jpg" title="25.បុកល្ហុងចុងត្នោត"></a>
+    </div>
             
 </html>
 
